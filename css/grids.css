@@ -27,12 +27,25 @@ body{
 	text-align: center;
 	align-items: center;
 }
+#contenedor nav #logo {
+	display: flex;
+	object-fit: cover;
+	
+}
+nav #logo img {
+	width: 320px;
+	height: auto;
+	margin-left: 10px;
+	align-content: center;
+}
+
 nav div a {
 	color: black;
 	text-decoration: none;
 	font-family: "kepler-std-subhead", serif;
-	font-size: 20px;
+	font-size: 25px;
 	font-style: italic;
+	color: #FFFFFF;
 }
 #contenedor main {
 	display: flex;
@@ -61,20 +74,20 @@ nav div a {
 	display: flex;
 }
 #texto p {
-	display: flex;
-	width:300px;
-	height: 200px;
-	padding: 10px;
-	color: #FFFFFF;
-	background-color: rgba(57,57,57,0.50);
-	text-align: center;
-	align-items: center;
+    display: flex;
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    color: #000000;
+    background-color: rgba(235,235,235,0.55);
+    text-align: center;
+    align-items: center;
 }
 #texto .border {
 	border-right: 1px solid;
 }
 #contenedor #sec-1 {
-	background-color: #c43c3c;
+	background-color: #a10017;
     display: grid;
     padding: 10px;
     grid-row: 3/4;
@@ -106,155 +119,183 @@ section article img {
 	height: auto;
 	width: 100%;
 }
+
 .div2 {
     grid-column-start: 2;
-	/*background-color: #bc010a;*/
 }
+#sec-2 .div2 h1 {
+	ont-family: "kepler-std-subhead", serif;
+    font-size: 30px;
+    font-style: italic;
+	color: #a10017;
+	text-align: center;
+}
+
 #sec-2 .div2 p {
 	display: flex;
+	text-align: justify;
 }
-.sec3 {  
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(3, 1fr);
-	gap: 10px;
-	padding: 10px;
-	grid-auto-flow: row;
-}
-.Tarjeta-1 {  
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 1fr;
-	gap: 10px;
-	padding: 10px;
-	grid-auto-flow: row;
-	background-color: #c43c3c;
-	grid-area: 1 / 1 / 2 / 3;
-}
-.imgt1 { 
-	grid-area: 1 / 1 / 2 / 2; 
-}
-.Tarjeta-1 .imgt1 img {
-	max-width: 100%;
-	height: auto;
-	aspect-ratio: 16/9;
-	object-fit: cover;
-}
-.text1 { 
-	grid-area: 1 / 2 / 2 / 3;
-}
-.Tarjeta-1 .text1 h2 {
-}
-
-.Tarjeta-1 .text1 p {
-}
-
-
-.Tarjeta-2 {  
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(2, 1fr);
-	gap: 10px;
-	padding: 10px;
-	grid-auto-flow: row;
-	background-color: #c43c3c;
-	grid-area: 2 / 1 / 4 / 2;
-}
-.imgt2 { 
-	grid-area: 2 / 1 / 3 / 2;
-	grid-row: 3/2;
-}
-.Tarjeta-2 .imgt2 img {
-	max-width: 100%;
-	height: auto;
-	aspect-ratio: 16/9;
-	object-fit: cover;
-}
-.tex2 { 
-	grid-area: 1 / 1 / 2 / 2;
-	text-align: center;
-	align-items: center;
-}
-.Tarjeta-2 .tex2 h2 {
-}
-.Tarjeta-2 .tex2 p {
-}
-
-.Tarjeta-3 {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(2, 1fr);
-	gap: 10px;
-	padding: 10px;
-	grid-auto-flow: row;
-	background-color: #c43c3c;
-	grid-area: 1 / 3 / 3 / 4;
-}
-.imgt3 { 
-	grid-area: 1 / 1 / 2 / 2; 
-}
-.Tarjeta-3 .imgt3 img {
-	max-width: 100%;
-	height: auto;
-	aspect-ratio: 16/9;
-	object-fit: cover;
-}
-.tex3 { 
-	grid-area: 2 / 1 / 3 / 2; 
-}
-.Tarjeta-3 .tex3 h2 {
-}
-.Tarjeta-3 .tex3 p {
-}
-
-
-.Tarjeta-4 {  
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 1fr;
-	gap: 10px;
-	padding: 10px;
-	grid-auto-flow: row;
-	background-color: #c43c3c;
-	grid-area: 3 / 2 / 4 / 4;
-}
-.imgt4 { 
-	grid-area: 1 / 2 / 2 / 3; 
-}
-.Tarjeta-4 .imgt4 img {
-	max-width: 100%;
-	height: auto;
-	aspect-ratio: 16/9;
-	object-fit: cover;
-}
-.tex4 { 
-	grid-area: 1 / 1 / 2 / 2; 
-}
-.Tarjeta-4 .tex4 h2 {
-}
-
-.img { 
-	grid-area: 2 / 2 / 3 / 3; 
-}
-.sec3 .img img {
-	max-width: 100%;
-	height: auto;
-	aspect-ratio: 16/9;
-	object-fit: cover;
-}
-
-#contenedor footer {
+#sec3 {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+    grid-auto-flow: row;
     background-color: #a10017;
-    grid-row: 6/7;
+}
+#Tarjeta-1 {
+    object-fit: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding: 10px;
+    grid-auto-flow: row;
+    background-color: #EBEBEB;
+    grid-area: 1 / 1 / 2 / 3;
+}
+#imgt1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url(../img/Mousse%20de%20Frutos%20Rojos.jpg);
+	height: 220px;
+	width: auto;
+	background-size: cover;
+}
+#text1 { 
+	grid-area: 1 / 2 / 2 / 3;
+	align-content: center;
+	text-align: center;
+}
+#Tarjeta-1 .text1 h2 {
+	font-family: "kepler-std-subhead", serif;
+	font-size: 25px;
+	font-style: italic;
+	color: #a10017;
 }
 
-#derechos {
+#Tarjeta-1 .text1 p {
+	color: #000000
+}
+#Tarjeta-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+    grid-auto-flow: row;
+    background-color: #EBEBEB;
+    grid-area: 2 / 1 / 4 / 2;
+}
+#imgt2 {
+    grid-area: 2 / 1 / 3 / 2;
+    grid-row: 3/2;
+    background-image: url(../img/Tarta%20de%20Ar%C3%A1ndanos.jpg);
+	background-size: cover;
+}
+#tex2 { 
+	grid-area: 1 / 1 / 2 / 2;
+	align-content: center;
+	text-align: center;
+}
+#Tarjeta-2 .tex2 h2 {
+    font-family: "kepler-std-subhead", serif;
+    font-size: 25px;
+    font-style: italic;
+    color: #a10017;
+}
+#Tarjeta-2 .tex2 p {
+	color: #000000
+}
+#Tarjeta-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+    grid-auto-flow: row;
+    background-color: #EBEBEB;
+    grid-area: 1 / 3 / 3 / 4;
+}
+#imgt3 {
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url(../img/Helado%20de%20moras.jpg);
+	background-size: cover;
+}
+#tex3 { 
+	grid-area: 2 / 1 / 3 / 2; 
+	align-content: center;
+	text-align: center;
+}
+#Tarjeta-3 .tex3 h2 {
+    font-family: "kepler-std-subhead", serif;
+    font-size: 25px;
+    font-style: italic;
+    color: #a10017;
+}
+#Tarjeta-3 .tex3 p {
+	color: #000000
+}
+#Tarjeta-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding: 10px;
+    grid-auto-flow: row;
+    background-color: #EBEBEB;
+    grid-area: 3 / 2 / 4 / 4;
+}
+#imgt4 {
+    grid-area: 1 / 2 / 2 / 3;
+    background-image: url(../img/Cheesecake%20de%20Fresas.jpg);	
+	background-size: cover;
+}
+#tex4 { 
+	grid-area: 1 / 1 / 2 / 2;
+	align-content: center;
+	text-align: center;
+}
+#Tarjeta-4 .tex4 h2 {
+    font-family: "kepler-std-subhead", serif;
+    font-size: 25px;
+    font-style: italic;
+    color: #a10017;
+}
+#Tarjeta-4 .tex4 p {
+	color: #000000
+}
+#img {
+    grid-area: 2 / 2 / 3 / 3;
+    background-image: url(../img/Cheesecake%20de%20frutos%20rojos.jpg);
+	background-size: cover;
+}
+##contenedor footer {
+    background-color: #a10017;
+    color: #FFFFFF;
+    padding: 40px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    row-gap: 10px; 
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-size: 14px;
-    border-top: 1px solid #444;
-    padding: 20px;
-    width: 100%;
-    height: 50px;
-    float: left;
+}
+#links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+#links i {
+    font-size: 24px;
+}
+hr {
+    width: 80%;
+    height: 1px;
+    background: white;
+    border: none;
+    margin: 10px 0;
+}
+#derechos {
+    font-size: 10pt;
 }

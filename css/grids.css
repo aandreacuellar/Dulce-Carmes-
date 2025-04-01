@@ -167,15 +167,17 @@ section article img {
 	align-content: center;
 	text-align: center;
 }
-#Tarjeta-1 .text1 h2 {
+#Tarjeta-1 #text1 h2 {
 	font-family: "kepler-std-subhead", serif;
 	font-size: 25px;
 	font-style: italic;
 	color: #a10017;
 }
 
-#Tarjeta-1 .text1 p {
-	color: #000000
+#Tarjeta-1 #text1 p {
+	color: #000000;
+	display: flex;
+	text-align: justify;
 }
 #Tarjeta-2 {
     display: grid;
@@ -198,14 +200,16 @@ section article img {
 	align-content: center;
 	text-align: center;
 }
-#Tarjeta-2 .tex2 h2 {
+#Tarjeta-2 #tex2 h2 {
     font-family: "kepler-std-subhead", serif;
     font-size: 25px;
     font-style: italic;
     color: #a10017;
 }
-#Tarjeta-2 .tex2 p {
-	color: #000000
+#Tarjeta-2 #tex2 p {
+	color: #000000;
+	display: flex;
+	text-align: justify;
 }
 #Tarjeta-3 {
     display: grid;
@@ -227,14 +231,16 @@ section article img {
 	align-content: center;
 	text-align: center;
 }
-#Tarjeta-3 .tex3 h2 {
+#Tarjeta-3 #tex3 h2 {
     font-family: "kepler-std-subhead", serif;
     font-size: 25px;
     font-style: italic;
     color: #a10017;
 }
-#Tarjeta-3 .tex3 p {
-	color: #000000
+#Tarjeta-3 #tex3 p {
+	color: #000000;\
+	display: flex;
+	text-align: justify;
 }
 #Tarjeta-4 {
     display: grid;
@@ -256,21 +262,23 @@ section article img {
 	align-content: center;
 	text-align: center;
 }
-#Tarjeta-4 .tex4 h2 {
+#Tarjeta-4 #tex4 h2 {
     font-family: "kepler-std-subhead", serif;
     font-size: 25px;
     font-style: italic;
     color: #a10017;
 }
-#Tarjeta-4 .tex4 p {
-	color: #000000
+#Tarjeta-4 #tex4 p {
+	color: #000000;
+	display: flex;
+	text-align: justify;
 }
 #img {
     grid-area: 2 / 2 / 3 / 3;
     background-image: url(../img/Cheesecake%20de%20frutos%20rojos.jpg);
 	background-size: cover;
 }
-##contenedor footer {
+#contenedor footer {
     background-color: #a10017;
     color: #FFFFFF;
     padding: 40px;
@@ -289,13 +297,13 @@ section article img {
 #links i {
     font-size: 24px;
 }
-hr {
-    width: 80%;
-    height: 1px;
-    background: white;
-    border: none;
-    margin: 10px 0;
-}
 #derechos {
     font-size: 10pt;
+}
+
+@media (max-width:1200px){
+	#contenedor {
+		width: 100vw;
+		height: auto;
+	}
 }

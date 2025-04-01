@@ -228,8 +228,8 @@ section article img {
 }
 #tex3 { 
 	grid-area: 2 / 1 / 3 / 2; 
-	align-content: center;
-	text-align: center;
+	display: flex;
+	text-align: justify;
 }
 #Tarjeta-3 #tex3 h2 {
     font-family: "kepler-std-subhead", serif;

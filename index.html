@@ -9,17 +9,25 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://use.typekit.net/zob1aam.css">
+
 </head>
 
 <body>
 <div id="contenedor">
-	<nav>
-		<div id="logo"> <a href="#video"><img src="img/Dulce Carmesí . Logo.svg" alt="Berrylicious Logo"></a></div>
-		<div><a href="#video">Inicio</a></div>
-		<div><a href="#sec-1">Galería</a></div>
-		<div><a href="#sec-2">Servicios</a></div>
-		<div><a href="#sec3">Productos</a></div>
-	</nav>
+	<header>
+		<img id="logo" src="img/Dulce Carmesí . Logo.svg" alt="Berrylicious Logo">
+			<button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></button>
+				<nav class="navmenu" id="navmenu">
+					<button id="cerrar" class="cerrar-menu"><i class="fa-solid fa-xmark" style="color: #a10017;"></i></button>
+					<ul class="nav-list">
+						<li><a href="#video">Inicio</a></li>
+						<li><a href="#sec-1">Galería</a></li>
+						<li><a href="#sec-2">Servicios</a></li>
+						<li><a href="#sec3">Productos</a></li>
+					</ul>
+				</nav>
+	</header>
+	
 	<main>
 		<video autoplay muted loop id="video">
 			<source src="video/video.mp4" type="video/mp4">
@@ -42,14 +50,16 @@
 		<div id="div1">	
 	    	<img src="img/Batido de frutos rojos.png" alt=""/> 
 		</div>
-    	<div class="div2">
-			<h1>Beneficios y propiedades de los frutos rojos.</h1>
-			<p>Los frutos rojos, como las fresas, frambuesas, moras y arándanos, son una fuente natural de antioxidantes que ayudan a combatir el envejecimiento celular y fortalecen el sistema inmunológico. Gracias a su alto contenido de vitaminas C y E, estos frutos no solo aportan energía, sino que también favorecen la producción de colágeno, mejorando la salud de la piel. Además, su riqueza en fibra contribuye a una mejor digestión, ayudando al organismo a absorber nutrientes de manera más eficiente.</p>
-		</div>
-    	<div class="div2">
-			<h1>Ingredientes versátiles para productos saludables.</h1>
-		  <p>Los frutos rojos son ideales para la creación de productos naturales y saludables en diversas presentaciones, desde jugos y batidos hasta cosméticos y suplementos. Su sabor fresco y ligeramente ácido los convierte en un ingrediente clave para mejorar la experiencia sensorial en alimentos y bebidas. En la industria del bienestar, se utilizan en aceites esenciales, mascarillas faciales y exfoliantes, aprovechando sus propiedades regenerativas y revitalizantes para el cuidado de la piel.</p>
-		</div>
+		<sec id="tex-sec2">
+			<div class="div2">
+				<h1>Beneficios y propiedades de los frutos rojos.</h1>
+				<p>Los frutos rojos, como las fresas, frambuesas, moras y arándanos, son una fuente natural de antioxidantes que ayudan a combatir el envejecimiento celular y fortalecen el sistema inmunológico. Gracias a su alto contenido de vitaminas C y E, estos frutos no solo aportan energía, sino que también favorecen la producción de colágeno, mejorando la salud de la piel. Además, su riqueza en fibra contribuye a una mejor digestión, ayudando al organismo a absorber nutrientes de manera más eficiente.</p>
+			</div>
+			<div class="div3">
+				<h1>Ingredientes versátiles para productos saludables.</h1>
+			  <p>Los frutos rojos son ideales para la creación de productos naturales y saludables en diversas presentaciones, desde jugos y batidos hasta cosméticos y suplementos. Su sabor fresco y ligeramente ácido los convierte en un ingrediente clave para mejorar la experiencia sensorial en alimentos y bebidas. En la industria del bienestar, se utilizan en aceites esenciales, mascarillas faciales y exfoliantes, aprovechando sus propiedades regenerativas y revitalizantes para el cuidado de la piel.</p>
+			</div>
+		</sec>
 	</section>
   <section id="sec3">
 	  	<div id="Tarjeta-1">
@@ -92,6 +102,9 @@
 	<div id="derechos">
 		  © 2025 DULCE CARMESÍ. Todos los derechos reservados.
 	</div>
+	
+	<script type="text/javascript" src="JavaScript/javadoc.js"></script>
+
 </footer>
 </div>
 </body>
